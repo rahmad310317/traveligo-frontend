@@ -1,0 +1,368 @@
+/**
+ * /*!
+ * Bootstrap v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *
+ * @format
+ */
+
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import "colorVariabel";
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "container-grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "utilities";
+@import "print";
+
+
+
+.comments {
+	margin-top: 20px;
+  }
+  
+  .comments-title {
+	font-size: 30px;
+	margin-bottom: 20px;
+  }
+  
+  .comments-container {
+	margin-top: 40px;
+  }
+  
+  .comment-form-title {
+	font-size: 22px;
+  }
+  
+  .comment-form-textarea {
+	width: 100%;
+	height: 80px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	border: 1px solid rgb(107, 114, 12);
+  }
+  
+  .comment-form-button {
+	font-size: 16px;
+	padding: 8px 16px;
+	background: rgb(59, 130, 246);
+	border-radius: 8px;
+	color: white;
+  }
+  
+  .comment-form-button:hover:enabled {
+	cursor: pointer;
+	background: rgb(37, 99, 235);
+  }
+  
+  .comment-form-button:disabled {
+	opacity: 0.7;
+	cursor: default;
+  }
+  
+  .comment-form-cancel-button {
+	margin-left: 10px;
+  }
+  
+  .comment {
+	display: flex;
+	margin-bottom: 28px;
+  }
+  
+  .comment-image-container {
+	margin-right: 12px;
+  }
+  
+  .comment-image-container img {
+	border-radius: 50px;
+  }
+  
+  .comment-right-part {
+	width: 100%;
+  }
+  
+  .comment-content {
+	display: flex;
+  }
+  
+  .comment-author {
+	margin-right: 8px;
+	font-size: 20px;
+	color: rgb(59, 130, 246);
+  }
+  
+  .comment-text {
+	font-size: 18px;
+  }
+  
+  .comment-actions {
+	display: flex;
+	font-size: 12px;
+	color: rgb(51, 51, 51);
+	cursor: pointer;
+	margin-top: 8px;
+  }
+  
+  .comment-action {
+	margin-right: 8px;
+  }
+  
+  .comment-action:hover {
+	text-decoration: underline;
+  }
+  
+  .replies {
+	margin-top: 20px;
+  }
+  
+
+.brand-text-icon {
+	font-size: 26px;
+	font-weight: 700;
+	font-family: "poppins", sans-serif;
+	color: $primary;
+	&:hover {
+		color: $primary;
+		text-decoration: none;
+	}
+}
+.justify {
+	text-align: justify;
+}
+
+header {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid $gray-200;
+	.navbar {
+		height: 120px;
+		.navbar-nav {
+			padding-left: 130px;
+			.btn {
+				margin-left: 130px;
+				font-family: "poppins", sans-serif;
+				font-size: 18px;
+				
+			}
+			li.nav-item {
+				&.active {
+					.nav-link {
+						color: $teal;
+					}
+				}
+				a {
+					&.nav-link {
+						color: #1d7874;
+						padding-left: 40px;
+						padding-right: 40px;
+						font-size: 17px;
+						font-weight: 500;
+						font-family: "poppins", sans-serif;
+
+						&.hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+section {
+	margin-bottom: 70px;
+
+}
+
+.img-cover {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+.img-contain {
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+}
+.card {
+	&.bordered {
+	  border: 2px solid $gray-500;
+	}
+	border-radius: 5px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	.tag {
+	  z-index: 3;
+	  font-size: 0.875rem;
+	  background-color: #218AD7;
+	  padding: 0.25rem 1.25rem;
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  color: $white;
+	  min-height: 30px;
+	  border-radius: 15px;
+	  font-weight: 400;
+	  span {
+		font-weight: 300;
+	  }
+	}
+  
+	.img-wrapper {
+	  height: 100%;
+	  margin-bottom: 0;
+	  border-radius: 1rem 1rem 0 0;
+	  overflow: hidden;
+	 
+	}
+  
+	.meta-wrapper {
+	  margin-top: 1rem;
+	  h5 {
+		font-size: 1.125rem;
+		margin-bottom: 2px;
+		padding-left: 12px;
+		
+	  }
+	  span {
+		font-size: 0.875rem;
+		padding-left: 12px;
+		padding-bottom: 10px;
+	  }
+	}
+  
+	&.card-featured {
+	  overflow: hidden;
+	  cursor: pointer;
+	  height: 100%;
+	  &:after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: scale(1.1);
+		transition: 0.5s transform ease-in-out;
+		z-index: 2;
+		@include gradient-y(rgba($black, 0), rgba($black, 0.51), 0%, 100%);
+	  }
+  
+	  .img-wrapper {
+		z-index: 1;
+		margin: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: scale(1.1);
+		transition: 0.25s transform ease-in-out;
+	  }
+  
+	  .meta-wrapper {
+		z-index: 4;
+		color: $white;
+		padding: 20px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		transform: translateY(0);
+		transition: 0.3s transform ease-in-out;
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+	  }
+  
+	  &:hover {
+		.meta-wrapper {
+		  transform: translateY(-10px);
+		}
+		&:after {
+		  transform: scale(1);
+		}
+		.img-wrapper {
+		  transform: scale(1);
+		}
+	  }
+	}
+  }
+
+footer {
+	border-top: 1px solid $gray-200;
+	padding-top: 50px;
+	.brand-tagline {
+		margin-top: 10px;
+		color: $gray-500;
+		font-weight: 300;
+	}
+
+	.list-group-item {
+		padding: 0.3125rem 0;
+		border: 0;
+	}
+	a,
+	span {
+		color: $gray-500;
+		font-weight: 300;
+	}
+	a {
+		@include hover-focus {
+			color: $gray-800;
+		}
+	}
+}
+.copyrights {
+	margin-top: 50px;
+	font-weight: 300;
+	font-size: 0.875rem;
+	color: $gray-400;
+}
+.input-group {
+	.form-control {
+		width: 500px;
+		border-radius: 16px;
+	}
+}
+
+main {
+	p {
+	  color: $gray-500;
+	  font-weight: 300;
+	}
+  }
+
